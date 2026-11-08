@@ -1,0 +1,83 @@
+# ============================================================
+# FacilityOps Pulse - .gitignore
+# ============================================================
+
+# --- Environment & Secrets ---
+.env
+*.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.pyo
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+.Python
+
+# --- IDE / Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+logs/*.log
+logs/*.log.*
+*.log
+
+# --- Alembic ---
+# Keep migrations but ignore auto-generated pycache inside them
+alembic/versions/__pycache__/
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Sentence Transformers Cache ---
+# Model cache can be large; re-downloaded automatically
+.cache/
+sentence_transformers_cache/
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# --- Notebooks ---
+*.ipynb
+.ipynb_checkpoints/
+
+# --- OS ---
+.DS_Store
+desktop.ini
+
+# Application logs
+logs/*.log
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
